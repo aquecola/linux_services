@@ -1,0 +1,3 @@
+#!/bin/bash
+
+timeshift --check

@@ -1,0 +1,10 @@
+[Unit]
+Description=Run timeshift check app
+After=multi-user.target
+[Service]
+Type=idle
+Restart=always
+RestartSec=3600
+ExecStart=/usr/bin/check_timeshift.sh
+[Install]
+WantedBy=multi-user.target
